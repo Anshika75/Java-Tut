@@ -12,7 +12,7 @@ public class StudentRunner {
         ArrayList<Student> studentsAl = new ArrayList<>(students);
         System.out.println(studentsAl);
         Collections.sort(studentsAl, new AscendingConparator());
-        System.out.println("AscendingConparator" + studentsAl);
+        System.out.println("RAscendingConparator" + studentsAl);
     }
 
 }
