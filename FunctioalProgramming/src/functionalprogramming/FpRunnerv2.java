@@ -10,6 +10,9 @@ public class FpRunnerv2 {
         .forEach(element -> System.out.println(element));
         int sum = numbers.stream().reduce(0, (number1, number2) -> number1 + number2);
         System.out.println("Sum is " + sum);
+        // numbers.stream().forEach(e -> System.out.println(e * e));
+        numbers.stream().forEach(e -> System.out.println(e * e));
+
     }
 
     private static void printEvenNumbersInListFunctional(List<Integer> numbers) {
