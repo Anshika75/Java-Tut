@@ -21,7 +21,7 @@ class Task2 implements Runnable{
 }
 
 public class ThreadRunner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         // Task 1
 
@@ -37,6 +37,9 @@ public class ThreadRunner {
         Task2 task2 = new Task2();
         Thread task2Thread = new Thread(task2);
         task2Thread.start();
+
+        task1.join();
+        task2Thread.join();
 
         // Task 3
 
